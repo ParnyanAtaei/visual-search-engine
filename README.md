@@ -5,5 +5,19 @@ Next, a FAISS index is created from these image embeddings. FAISS (Facebook AI S
 
 Afterward, each query (whether an image or text) is also converted to an embedding. This query embedding then undergoes L2 normalization. Subsequently, a search is performed within the FAISS index to identify and retrieve the top 5 most similar images corresponding to the query (through inner product).
 
-The results are as below:
+The results of image_query as below:
+<table style="width:100%;">
+  <tr>
+    <td style="width:50%; text-align:center;">
+      <img src="images/result_cat.PNG" alt="serach based of cat image" style="width:100%;">
+      <br>
+      <em>Top 5 image similar to query image</em>
+    </td>
+    <td style="width:50%; text-align:center;">
+      <img src="images/result_dog.PNG" alt="serach based of dog image" style="width:100%;">
+      <br>
+      <em>Top 5 image similar to query image</em>
+    </td>
+  </tr>
+</table>
 
