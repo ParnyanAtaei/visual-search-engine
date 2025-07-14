@@ -27,4 +27,4 @@ And for text_query:
 
 
 watch a full video demo:
-[![Video Demo](images/result_cat.PNG)](https://youtu.be/smNqcue3WPA "Watch the full demo on YouTube")
+[![Video Demo](images/result_airplane.PNG)](https://youtu.be/smNqcue3WPA "Watch the full demo on YouTube")
