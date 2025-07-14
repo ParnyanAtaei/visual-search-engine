@@ -1,5 +1,5 @@
 # visual-search-engine
-To build a visual search engine, we first need to convert each image in our collection (specifically, the COCO 2017 dataset in this case) to extract high-dimensional numerical "feature vectors" (embeddings).
+To build a visual search engine based on CLIP, we first need to convert each image in our collection (specifically, the COCO 2017 dataset in this case) to extract high-dimensional numerical "feature vectors" (embeddings).
 
 Next, a FAISS index is created from these image embeddings. FAISS (Facebook AI Similarity Search) is a specialized library for efficient similarity search and clustering of dense vectors, optimized for rapidly searching through millions or even billions of high-dimensional vectors.
 
@@ -28,3 +28,22 @@ And for text_query:
 
 watch a full video demo:
 [![Video Demo](images/result_airplane.PNG)](https://youtu.be/smNqcue3WPA "Watch the full demo on YouTube")
+
+The core of our CNN-based image search engine involves a pre-trained ResNet50 architecture. To enable its use for feature extraction rather than classification, we remove its terminal fully connected layer, yielding rich image embeddings. For computational efficiency, especially on GPU hardware, these images are processed in mini-batches during the feature extraction phase, optimizing throughput. Next, a FAISS index is created from these image features, enabling efficient similarity search. During a query, the inner product between the query image's embedding and the indexed image embeddings is then calculated using the FAISS search() method to find similar images. The Gradio-based demo results are as follow:
+<table style="width:100%;">
+  <tr>
+    <td style="width:50%; text-align:center;">
+      <img src="images/result_cat_cnn.PNG" alt="serach based of cat image" style="width:100%;">
+      <br>
+      <em>Top 5 images similar to query image</em>
+    </td>
+    <td style="width:50%; text-align:center;">
+      <img src="images/result_cake_cnn.PNG" alt="serach based of dog image" style="width:100%;">
+      <br>
+      <em>Top 5 images similar to query image</em>
+    </td>
+  </tr>
+</table>
+
+
+
