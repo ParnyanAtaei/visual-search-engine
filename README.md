@@ -11,13 +11,17 @@ The results of image_query as below:
     <td style="width:50%; text-align:center;">
       <img src="images/result_cat.PNG" alt="serach based of cat image" style="width:100%;">
       <br>
-      <em>Top 5 image similar to query image</em>
+      <em>Top 5 images similar to query image</em>
     </td>
     <td style="width:50%; text-align:center;">
       <img src="images/result_dog.PNG" alt="serach based of dog image" style="width:100%;">
       <br>
-      <em>Top 5 image similar to query image</em>
+      <em>Top 5 images similar to query image</em>
     </td>
   </tr>
 </table>
 
+And for text_query:
+![Application Screenshot](images/result-car.PNG " Top 2 image similar to text query")
+
+The short video of how this visual search engine work:
