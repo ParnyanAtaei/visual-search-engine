@@ -21,7 +21,10 @@ The results of image_query as below:
   </tr>
 </table>
 
+
 And for text_query:
 ![Application Screenshot](images/result-car.PNG " Top 2 image similar to text query")
 
-The short video of how this visual search engine work:
+
+watch a full video demo:
+[![Video Demo](images/result_cat.PNG)](https://youtu.be/smNqcue3WPA "Watch the full demo on YouTube")
