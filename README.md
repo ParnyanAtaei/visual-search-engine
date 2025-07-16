@@ -115,6 +115,6 @@ This project requires the **COCO 2017 dataset**. Please download the following c
 
 After downloading, organize the data in your project root.
 
-## Usage
+## Use Cases
 
 This application is ideal for tasks like content recommendation, simply exploring visual similarity within your own image libraries.
