@@ -18,11 +18,11 @@ Afterward, each query (whether an image or text) is also converted to an embeddi
 
 **Interactive Interface:** Developed a Gradio-based web interface to facilitate intuitive image-to-image search.
 
-###watch a video demo:
+### Watch a video demo:
 [![Video Demo](images/result_airplane.PNG)](https://youtu.be/smNqcue3WPA "Watch the full demo on YouTube")
 
 
-The results of image_query as below:
+The results of image_query are as follow:
 
 <table style="width:100%;">
   <tr>
@@ -41,14 +41,13 @@ The results of image_query as below:
 
 
 Leveraging CLIP's ability to embed both text and images into a shared semantic space, we can develop a search engine that retrieves images based on text queries:
+
 ![Application Screenshot](images/result-car.PNG " Top 2 image similar to text query")
 
 
-watch a video demo:
-[![Video Demo](images/result_airplane.PNG)](https://youtu.be/smNqcue3WPA "Watch the full demo on YouTube")
+## CNN-based visual search engine:
 
-
-The core of our **CNN-based image search engine** involves a pre-trained ResNet50 architecture. To enable its use for feature extraction rather than classification, we remove its terminal fully connected layer, yielding rich image embeddings.
+The core of our **CNN-based visual search engine** involves a pre-trained ResNet50 architecture. To enable its use for feature extraction rather than classification, we remove its terminal fully connected layer, yielding rich image embeddings.
 
 For computational efficiency, especially on GPU hardware, these images are processed in mini-batches during the feature extraction phase, optimizing throughput. 
 
@@ -69,6 +68,9 @@ Next, a **FAISS index** is created from these image features, enabling efficient
   </tr>
 </table>
 
+
+## ViT-based visual search engine:
+
 To develop a **ViT-based visual search engine**, we utilize the same core methodology as in CNN-based and CLIP-based approaches, with the primary difference being the replacement of the feature extractor with a Vision Transformer (ViT) model. The results are as follow:
 
 <table style="width:100%;">
@@ -87,8 +89,12 @@ To develop a **ViT-based visual search engine**, we utilize the same core method
 </table>
 
 
-
 This application is ideal for tasks like content recommendation, reverse image search, anomaly detection in image datasets, or simply exploring visual similarity within your own image libraries.
+
+## To get a local copy up and running, simply clone the repository:
+
+```bash
+git clone [https://github.com/](https://github.com/)[YOUR_USERNAME]/[YOUR_REPO_NAME].git
 
 
 
