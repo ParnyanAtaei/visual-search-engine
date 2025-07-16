@@ -1,9 +1,21 @@
 # visual-search-engine
-To build a visual search engine based on **CLIP**, we first need to convert each image in our collection (specifically, the COCO 2017 dataset in this case) to extract high-dimensional numerical "feature vectors" (embeddings).
+
+## CLIP-based visual search engine:
+
+To build a visual search engine based on **CLIP**, we first need to convert each image in our collection (specifically, the COCO 2017 dataset in this case) to extract high-dimensional numerical "feature vectors" (embeddings) with CLIP image encoder.
 
 Next, a FAISS index is created from these image embeddings. **FAISS (Facebook AI Similarity Search)** is a specialized library for efficient similarity search and clustering of dense vectors, optimized for rapidly searching through millions or even billions of high-dimensional vectors.
 
 Afterward, each query (whether an image or text) is also converted to an embedding. This query embedding then undergoes L2 normalization. Subsequently, a search is performed within the FAISS index to identify and retrieve the top 5 most similar images corresponding to the query (through inner product).
+
+### In summary:
+**Feature Extraction:** Built a robust image feature extractor leveraging the CLIP image encoder.
+
+**Efficient Indexing:** Indexed extracted feature vectors using a FAISS IndexFlatIP for rapid similarity search.
+
+**Similarity Search:** Performed high-performance similarity search to find the most relevant images based on query embeddings.
+
+**Interactive Interface:** Developed a Gradio-based web interface to facilitate intuitive image-to-image search.
 
 The results of image_query as below:
 
