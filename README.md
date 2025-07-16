@@ -22,6 +22,7 @@ Afterward, each query (whether an image or text) is also converted to an embeddi
 [![Video Demo](images/result_airplane.PNG)](https://youtu.be/smNqcue3WPA "Watch the full demo on YouTube")
 
 
+
 The results of image_query are as follow:
 
 <table style="width:100%;">
@@ -53,7 +54,7 @@ The core of our **CNN-based visual search engine** involves a pre-trained ResNet
 
 For computational efficiency, especially on GPU hardware, these images are processed in mini-batches during the feature extraction phase, optimizing throughput. 
 
-Next, a **FAISS index** is created from these image features, enabling efficient similarity search. During a query, the inner product between the query image's embedding and the indexed image embeddings is then calculated using the FAISS search() method to find similar images. The Gradio-based demo results are as follow:
+Next, like CLIP-based visual search engine, a **FAISS index** is created from these image features, enabling efficient similarity search. During a query, the inner product between the query image's embedding and the indexed image embeddings is then calculated using the FAISS **search()** method to find similar images. The Gradio-based demo results are as follow:
 
 <table style="width:100%;">
   <tr>
@@ -104,10 +105,7 @@ You can get started by cloning the project repository to your local machine. Thi
     ```bash
     git clone https://github.com/ParnyanAtaei/visual-search-engine.git
     ```
-4.  Once cloned, change into the new project directory:
-    ```bash
-    cd [YOUR_REPO_NAME]
-    ```
+4.  Once cloned, change into the new project directory.
 
 ## Dataset
 
