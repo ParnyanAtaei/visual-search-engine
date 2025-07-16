@@ -1,4 +1,5 @@
 # visual-search-engine
+Built a basic image similarity search engine using CLIP/CNN/ViT and FAISS. The retrieved images shared similar semantic meaning with the query, indicating the effectiveness of the approach.
 
 ## CLIP-based visual search engine:
 
@@ -16,6 +17,10 @@ Afterward, each query (whether an image or text) is also converted to an embeddi
 **Similarity Search:** Performed high-performance similarity search to find the most relevant images based on query embeddings.
 
 **Interactive Interface:** Developed a Gradio-based web interface to facilitate intuitive image-to-image search.
+
+###watch a video demo:
+[![Video Demo](images/result_airplane.PNG)](https://youtu.be/smNqcue3WPA "Watch the full demo on YouTube")
+
 
 The results of image_query as below:
 
