@@ -40,9 +40,11 @@ The results of image_query are as follow:
 </table>
 
 
+
 Leveraging CLIP's ability to embed both text and images into a shared semantic space, we can develop a search engine that retrieves images based on text queries:
 
 ![Application Screenshot](images/result-car.PNG " Top 2 image similar to text query")
+
 
 
 ## CNN-based visual search engine:
@@ -67,6 +69,7 @@ Next, a **FAISS index** is created from these image features, enabling efficient
     </td>
   </tr>
 </table>
+
 
 
 ## ViT-based visual search engine:
@@ -94,7 +97,7 @@ This application is ideal for tasks like content recommendation, reverse image s
 ## To get a local copy up and running, simply clone the repository:
 
 ```bash
-git clone [https://github.com/](https://github.com/)[YOUR_USERNAME]/[YOUR_REPO_NAME].git
+git clone https://github.com/ParnyanAtaei/visual-search-engine.git
 
 
 
