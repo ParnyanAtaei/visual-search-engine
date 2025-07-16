@@ -92,13 +92,32 @@ To develop a **ViT-based visual search engine**, we utilize the same core method
 </table>
 
 
-This application is ideal for tasks like content recommendation, reverse image search, anomaly detection in image datasets, or simply exploring visual similarity within your own image libraries.
-
-## To get a local copy up and running, simply clone the repository:
-
-```bash
-git clone https://github.com/ParnyanAtaei/visual-search-engine.git
 
 
+## How It Works
 
+You can get started by cloning the project repository to your local machine. This will download all the project files onto your computer.
 
+1.  Open your terminal or command prompt.
+2.  Navigate to the directory where you want to save the project (e.g., `cd Documents/Projects`).
+3.  Execute the following command:
+    ```bash
+    git clone https://github.com/ParnyanAtaei/visual-search-engine.git
+    ```
+4.  Once cloned, change into the new project directory:
+    ```bash
+    cd [YOUR_REPO_NAME]
+    ```
+
+## Dataset
+
+This project requires the **COCO 2017 dataset**. Please download the following components:
+
+* **Images:**
+    * [train2017](http://images.cocodataset.org/zips/train2017.zip) (18GB)
+
+After downloading, organize the data in your project root.
+
+## Usage
+
+This application is ideal for tasks like content recommendation, simply exploring visual similarity within your own image libraries.
