@@ -93,12 +93,11 @@ To develop a **ViT-based visual search engine**, we utilize the same core method
 </table>
 
 
-
-
-## How It Works
+## Installation
 
 You can get started by cloning the project repository to your local machine. This will download all the project files onto your computer.
 
+### Steps
 1.  Open your terminal or command prompt.
 2.  Navigate to the directory where you want to save the project (e.g., `cd Documents/Projects`).
 3.  Execute the following command:
